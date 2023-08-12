@@ -1,0 +1,31 @@
+Insertion Sort is a simple and efficient sorting algorithm that is well-suited for specific scenarios where the dataset is relatively small or partially sorted. It has its advantages and best practices, and understanding these can help in choosing the appropriate sorting algorithm for different use cases. Here are some common situations where Insertion Sort is commonly used and some best practices for using it:
+
+Where to Use Insertion Sort:
+
+In every day life when we play cards, we use insertion to insert in right card correct position
+
+Small Datasets: Insertion Sort performs well on small datasets due to its simple nature and low overhead. For small arrays or lists with a limited number of elements, Insertion Sort can be faster than more complex sorting algorithms like Quick Sort or Merge Sort.
+Partial Sorting: If the input data is partially sorted or already has a considerable number of elements in the correct order, Insertion Sort can be more efficient than other sorting algorithms. It requires fewer comparisons and swaps when elements are mostly in their correct positions.
+Online or Streaming Data: Insertion Sort is suitable for scenarios where data is coming in real-time and needs to be sorted incrementally. It allows you to maintain a sorted list as new elements are added.
+Best Practices for Using Insertion Sort:
+
+Small Datasets: Use Insertion Sort for sorting small datasets with a limited number of elements. It is often faster for small arrays compared to more complex sorting algorithms with higher overhead.
+Partial Sorting: Consider Insertion Sort when dealing with partially sorted data or data that is already in a mostly sorted order. In such cases, the overhead of more advanced sorting algorithms may not be necessary.
+In-Place Sorting: Insertion Sort is an in-place sorting algorithm, meaning it does not require additional memory for temporary arrays. Use it when memory usage is a concern.
+Switch to Other Algorithms: For large datasets, it's generally better to use more efficient algorithms like Quick Sort, Merge Sort, or Tim Sort, which have better average-case time complexity for larger arrays.
+Runtime and Space Complexity:
+
+Runtime Complexity (Time Complexity): The average and worst-case time complexity of Insertion Sort is O(n^2). In the average case, it performs fewer comparisons and swaps compared to the worst case. In the best-case scenario (already sorted or nearly sorted array), Insertion Sort can achieve a time complexity of O(n) with minimal comparisons.
+Space Complexity: Insertion Sort has a space complexity of O(1) because it sorts the elements in-place without requiring additional memory for temporary arrays. It is considered an in-place sorting algorithm.
+In summary, Insertion Sort is best used for small datasets or partially sorted data where the overhead of more advanced algorithms may not be necessary. While it has a higher time complexity compared to more efficient sorting algorithms for larger datasets, its simplicity and in-place nature make it a valuable choice for specific use cases. For larger arrays, other sorting algorithms like Quick Sort or Merge Sort are typically preferred due to their better average-case time complexity.
+
+//pseudo code index starts from 1
+for j = 2 to A.length
+    key = A[j]
+    i = j-1
+    while (i>0 and A[i]>key) {
+        A[i+1] = A[i]
+        i-- //always becomes 0 at the end of the while loop
+    }
+    A[i+1] = key //first index of array should be the key
+

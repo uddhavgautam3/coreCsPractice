@@ -1,0 +1,55 @@
+Merge Sort is a highly efficient comparison-based sorting algorithm that is widely used in various scenarios due to its stable sorting, predictable performance, and guaranteed worst-case time complexity. Here are some situations where Merge Sort is commonly used:
+
+General Sorting: Merge Sort is useful for sorting large datasets efficiently in a stable manner. It guarantees a worst-case time complexity of O(n log n), making it one of the most preferred sorting algorithms for large arrays.
+External Sorting: Merge Sort is well-suited for external sorting scenarios where data is too large to fit into main memory and needs to be sorted using disk-based I/O. Merge Sort's ability to divide the data into manageable chunks and then merge them allows it to handle large datasets efficiently in such cases.
+Parallel Processing: Merge Sort can be parallelized effectively, which makes it suitable for parallel processing and distributed computing environments. The recursive nature of Merge Sort allows it to divide the work into smaller independent tasks that can be executed concurrently.
+Online Sorting: Merge Sort can handle data that is streamed in real-time, making it suitable for online sorting scenarios. As data arrives, it can be added to the sorted list using Merge Sort's divide and conquer approach.
+Best Practices for Using Merge Sort:
+
+Merge Sort is most effective for sorting large datasets, especially when the size of the data exceeds the available memory (RAM) of the system.
+For small arrays or datasets that can comfortably fit into memory, other simpler sorting algorithms like Quick Sort or Insertion Sort may be more efficient due to lower constant factors.
+While Merge Sort is stable and offers consistent performance, it requires additional memory for merging sub-arrays. When memory usage is a concern, it might not be the most efficient choice.
+For extremely small datasets (e.g., fewer than 10-20 elements), simpler sorting algorithms like Insertion Sort or Bubble Sort can be faster due to their lower overhead.
+Runtime and Space Complexity:
+
+Runtime Complexity (Time Complexity): The best, average, and worst-case time complexity of Merge Sort is O(n log n). It consistently performs well regardless of the initial order of the elements, making it suitable for a wide range of use cases.
+Space Complexity: Merge Sort has a space complexity of O(n) due to the need to create temporary arrays during the merging process. This additional memory requirement is used for the merging step and may impact the overall memory consumption. However, its space complexity remains efficient for many practical scenarios.
+Overall, Merge Sort is a versatile and efficient sorting algorithm, well-suited for handling large datasets, stable sorting, and parallel processing. It is a popular choice for various sorting tasks, especially when stability and worst-case performance are essential considerations.
+
+partition
+    arr: size 0 to n-1
+    n/2
+    leftArr = arr(0,middle)
+    rightArr = (middle, n-1)
+    return merge(leftArr, rightArr)
+
+merge(leftArr, rightArr) {
+    newMergedArr(leftArr+rightArr)
+    leftIndexForLeftArr = rightIndexForRightArr = mergedIndex = 0 //initialize
+    while(leftIndexForLeftArr < leftArr.size && rightIndexForRightArr< rightArr.size) {
+        if(leftArr[leftIndexForLeftArr] <= rightArr[rightIndexForRightArr] {
+            mergedArr[mergedIndex] = leftArr[leftIndexForLeftArr] //put the smallest one
+            leftIndexForLeftArr++
+        } else {
+            mergedArr[mergedIndex] = rightArr[rightIndexForRightArr] //put the smallest one
+            rightIndexForRightArr++
+        }
+        mergedIndex++
+    }
+
+    //when rightArr has more elements than leftArr
+    while(rightIndexForRightArr< rightArr.size) {
+        mergedArr[mergedIndex] = rightArr[rightIndexForRightArr] //put the smallest one
+        rightIndexForRightArr++
+        mergedIndex++
+    }
+
+    //when leftArr has more elements than leftArr
+        while(leftIndexForLeftArr < rightArr.size) {
+            mergedArr[mergedIndex] = leftArr[leftIndexForLeftArr] //put the smallest one
+            leftIndexForLeftArr++
+            mergedIndex++
+        }
+
+    //finally return mergedArr
+}

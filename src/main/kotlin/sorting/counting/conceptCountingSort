@@ -1,0 +1,13 @@
+When to use Counting Sort:
+Counting Sort is an efficient non-comparative integer sorting algorithm that is particularly useful when you need to sort elements with a small range of non-negative integers. It is most effective when the range of input values (the difference between the maximum and minimum values) is not significantly larger than the number of elements to be sorted. Counting Sort is commonly used for sorting integer data with small value ranges, such as sorting exam scores, ages, or grades.
+
+Best Practices for Counting Sort:
+
+Ensure Non-Negative Integers: Counting Sort works only with non-negative integers, so ensure that the input data consists of non-negative integer values.
+Limitation on Range: Counting Sort's performance depends on the range of input values. For large value ranges, the counting array may become too large and lead to increased memory usage. Ensure that the range of values is manageable for the available memory.
+Stability: By default, Counting Sort is a stable sorting algorithm. If you need stability in the sorting, ensure that you implement Counting Sort to maintain stability.
+Runtime and Space Complexity:
+
+Time Complexity: The time complexity of Counting Sort is O(n + k), where 'n' is the number of elements to be sorted, and 'k' is the range of non-negative integer values. Counting Sort operates in linear time, which makes it very efficient when the range of values is relatively small.
+Space Complexity: The space complexity of Counting Sort is O(n + k), where 'n' is the number of elements to be sorted, and 'k' is the range of non-negative integer values. Counting Sort requires additional memory to create the counting array of size 'k', which may become significant for large value ranges.
+Overall, Counting Sort is an excellent choice for sorting non-negative integers with small value ranges, offering linear time complexity. It is a simple and efficient algorithm when used under the appropriate conditions. However, it may not be suitable for sorting other data types or when the range of values becomes very large, as the memory usage may become prohibitive. In such cases, other sorting algorithms like Merge Sort or Quick Sort may be more appropriate.

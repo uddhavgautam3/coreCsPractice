@@ -1,0 +1,16 @@
+What is Radix (or base)?
+In binary, radix is 2, in octal it is 8, in decimal it is 10, and in hexadecimal it is 16.
+
+When to use Radix Sort:
+Radix Sort is a non-comparative integer sorting algorithm that is particularly useful when sorting large numbers or when the number of digits in the input numbers is relatively small compared to the number of elements. It is well-suited for sorting fixed-length strings or integers with a limited range of values. Radix Sort performs well when the input data has a bounded size and a relatively small number of unique keys.
+
+Best Practices for Radix Sort:
+
+Choose the Right Radix: Radix Sort can be implemented using different radix bases, such as base 2 (binary), base 10 (decimal), or even higher bases. The choice of radix depends on the data being sorted and the range of values. For example, when sorting decimal numbers, base 10 is a common choice.
+Stability: Radix Sort can be made stable by using a stable sorting algorithm at each iteration. If stability is important, consider using a stable sorting algorithm like Merge Sort or Insertion Sort as a sub-sorting algorithm during each iteration.
+Handling Negative Numbers: If the input data includes negative numbers, consider using an appropriate conversion technique (e.g., two's complement) to handle negative values correctly.
+Runtime and Space Complexity:
+
+Time Complexity: The time complexity of Radix Sort is O(d * (n + b)), where 'd' is the number of digits in the maximum value, 'n' is the number of elements to be sorted, and 'b' is the radix/base. In practice, 'd' is often considered a constant factor, making the time complexity O(n * k), where 'k' is the average number of digits in the input numbers.
+Space Complexity: The space complexity of Radix Sort is O(n + b), where 'n' is the number of elements to be sorted, and 'b' is the radix/base. The space complexity comes from the need to maintain count arrays for each radix value and a temporary array to store the sorted output.
+Overall, Radix Sort is an efficient algorithm for sorting integers or fixed-length strings when the number of elements is large, and the range of values or the number of digits is relatively small. It can outperform comparison-based sorting algorithms in such scenarios. However, for sorting general data types or small data sets, comparison-based sorting algorithms like Merge Sort or Quick Sort may be more suitable due to their lower constant factors.

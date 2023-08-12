@@ -1,0 +1,13 @@
+When to use Bucket Sort:
+Bucket Sort is an efficient non-comparative sorting algorithm that is particularly useful when you have a relatively uniform distribution of input data over a known range. It is most effective when the input elements are uniformly distributed and the data can be divided into distinct buckets, with each bucket containing a subset of elements that fall within a specific range. Bucket Sort is commonly used for sorting data with a uniform distribution, such as sorting uniformly distributed decimal fractions or grades.
+
+Best Practices for Bucket Sort:
+
+Choose the Right Bucket Size: The efficiency of Bucket Sort depends on how well the input data can be divided into buckets. Choose an appropriate bucket size to balance the trade-off between the number of buckets and the number of elements in each bucket. A good rule of thumb is to have a bucket size proportional to the input size.
+Select a Suitable Sub-Sorting Algorithm: Bucket Sort uses a sub-sorting algorithm to sort the elements within each bucket. The choice of sub-sorting algorithm can impact the overall performance. For small bucket sizes, insertion sort may be sufficient, but for larger bucket sizes, consider using more efficient sorting algorithms like Merge Sort or Quick Sort.
+Uniform Distribution Assumption: Bucket Sort's performance heavily relies on the assumption of a uniform distribution of input data. Be cautious when using Bucket Sort with skewed distributions, as it may lead to suboptimal performance.
+Runtime and Space Complexity:
+
+Time Complexity: The time complexity of Bucket Sort depends on the choice of the sub-sorting algorithm. If a good sub-sorting algorithm with a time complexity of O(n log n) is chosen, and the bucket sizes are not too large, the overall time complexity of Bucket Sort can be close to O(n). However, if each bucket contains many elements and the sub-sorting algorithm is less efficient, the time complexity can degrade to O(n^2).
+Space Complexity: The space complexity of Bucket Sort is O(n + k), where 'n' is the number of elements to be sorted, and 'k' is the number of buckets. Bucket Sort requires additional memory to create the buckets, which can become significant for a large number of buckets.
+Overall, Bucket Sort is a powerful sorting algorithm when used under the right conditions, such as when the input data is uniformly distributed and can be easily divided into buckets. It is essential to choose an appropriate bucket size and sub-sorting algorithm to achieve good performance. However, be cautious with skewed distributions, as it can impact the efficiency of Bucket Sort.

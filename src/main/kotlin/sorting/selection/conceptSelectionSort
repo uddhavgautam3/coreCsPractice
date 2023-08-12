@@ -1,0 +1,4 @@
+Selection Sort:
+
+Educational Purposes: Similar to Bubble Sort, Selection Sort is useful for educational purposes and teaching basic sorting concepts.
+Minimizing Swaps: If minimizing the number of swaps is a priority, Selection Sort may be preferred over Bubble Sort. Selection Sort performs fewer swaps, precisely n - 1 swaps (where n is the number of elements), regardless of the initial order of the elements.

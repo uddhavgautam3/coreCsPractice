@@ -1,0 +1,4 @@
+Bubble Sort:
+
+Educational Purposes: Bubble Sort is often used in introductory programming courses to teach the concept of sorting algorithms and how to implement them. It's a good starting point to understand basic sorting techniques.
+Small Datasets: For very small arrays or datasets, Bubble Sort's simplicity may be sufficient, and the overhead of more complex algorithms might not be justified. In such cases, the difference in performance between Bubble Sort and other algorithms may not be significant.
