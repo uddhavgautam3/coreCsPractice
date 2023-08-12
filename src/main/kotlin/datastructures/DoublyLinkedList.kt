@@ -1,4 +1,4 @@
-package hashmap
+package datastructures
 
 class Node<T>(val value: T, var prev: Node<T>? = null, var next: Node<T>? = null)
 
@@ -58,6 +58,25 @@ class DoublyLinkedList<T> {
             current = current.next
         }
         println("Node with value ${node.value} not found in the list.")
+    }
+
+    fun deleteNode(nodeToDelete: Node<T>?) {
+        if (nodeToDelete == null) {
+            println("Node to delete is null.")
+            return
+        }
+
+        if (nodeToDelete == head) {
+            head = nodeToDelete.next
+        } else {
+            nodeToDelete.prev?.next = nodeToDelete.next
+        }
+
+        if (nodeToDelete == tail) {
+            tail = nodeToDelete.prev
+        } else {
+            nodeToDelete.next?.prev = nodeToDelete.prev
+        }
     }
 
     fun printList() {

@@ -1,4 +1,4 @@
-package hashmap
+package datastructures
 
 /*
 Deleting a node from a linked list is fairly straightforward. Given a node n,

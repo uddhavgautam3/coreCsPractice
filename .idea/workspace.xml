@@ -5,53 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d49a62cf-b4dd-427f-98d3-dc08b08a6783" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/hashmap/DLL1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/hashmap/DoublyLinkedList.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/hashmap/LLdrawio.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/hashmap/SimpleHashMap.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/hashmap/SinglyLinkedList.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/bubble/Bubble-sort-example-300px.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/bubble/BubbleSorter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/bubble/conceptBubbleSort" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/bucket/BucketSorter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/bucket/bucketSort.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/bucket/conceptBucketSort" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/conceptSort" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/counting/CountingSorter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/counting/conceptCountingSort" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/heap/HeapSorter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/heap/conceptHeapSort" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/insertion/InsertionSorter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/insertion/conceptInsertionSort" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/merge/ExternalMergeSorter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/merge/Merge-sort-example-300px.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/merge/MergeSorter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/merge/conceptMergeSort" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/merge/input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/merge/output.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/quick/conceptQuickSort" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/radix/RadixSorter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/radix/conceptRadixSort" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/selection/Selection-Sort-Animation.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/selection/SelectionSorter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/sorting/selection/conceptSelectionSort" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/datastructures/conceptDoublyLinkedList" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/hashmap/DLL1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/datastructures/DLL1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/hashmap/DoublyLinkedList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/datastructures/DoublyLinkedList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/hashmap/LLdrawio.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/datastructures/LLdrawio.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/hashmap/SimpleHashMap.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/datastructures/SimpleHashMap.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/hashmap/SinglyLinkedList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/datastructures/SinglyLinkedList.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +82,7 @@
   </component>
   <component name="RunManager" selected="Kotlin.DoublyLinkedListKt">
     <configuration name="DoublyLinkedListKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hashmap.DoublyLinkedListKt" />
+      <option name="MAIN_CLASS_NAME" value="datastructures.DoublyLinkedListKt" />
       <module name="KotlinProj.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -144,14 +103,14 @@
       </method>
     </configuration>
     <configuration name="SimpleHashMapKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hashmap.SimpleHashMapKt" />
+      <option name="MAIN_CLASS_NAME" value="datastructures.SimpleHashMapKt" />
       <module name="KotlinProj.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="SinglyLinkedListKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hashmap.SinglyLinkedListKt" />
+      <option name="MAIN_CLASS_NAME" value="datastructures.SinglyLinkedListKt" />
       <module name="KotlinProj.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,7 +139,7 @@
       <workItem from="1691097370940" duration="7470000" />
       <workItem from="1691154626170" duration="10819000" />
       <workItem from="1691198984097" duration="3161000" />
-      <workItem from="1691524548793" duration="20747000" />
+      <workItem from="1691524548793" duration="21116000" />
     </task>
     <servers />
   </component>

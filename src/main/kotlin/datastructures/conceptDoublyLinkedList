@@ -1,0 +1,27 @@
+Advantages Of DLL:
+
+Reversing the doubly linked list is very easy.
+It can allocate or reallocate memory easily during its execution.
+As with a singly linked list, it is the easiest data structure to implement.
+The traversal of this doubly linked list is bidirectional which is not possible in a singly linked list.
+Deletion of nodes is easy as compared to a Singly Linked List. A singly linked list deletion requires a pointer to the node and previous node to be deleted but in the doubly linked list, it only required the pointer which is to be deleted.’
+Doubly linked lists have a low overhead compared to other data structures such as arrays.
+Implementing graph algorithms.
+Disadvantages Of DLL:
+
+
+It uses extra memory when compared to the array and singly linked list.
+Since elements in memory are stored randomly, therefore the elements are accessed sequentially no direct access is allowed.
+Traversing a doubly linked list can be slower than traversing a singly linked list.
+Implementing and maintaining doubly linked lists can be more complex than singly linked lists.
+Uses Of DLL:
+
+It is used in the navigation systems where front and back navigation is required.
+It is used by the browser to implement backward and forward navigation of visited web pages that is a back and forward button.
+It is also used to represent a classic game deck of cards.
+It is also used by various applications to implement undo and redo functionality.
+Doubly Linked List is also used in constructing MRU/LRU (Most/least recently used) cache.
+Other data structures like stacks, Hash Tables, Binary trees can also be constructed or programmed using a doubly-linked list.
+Also in many operating systems, the thread scheduler(the thing that chooses what process needs to run at which time) maintains a doubly-linked list of all processes running at that time.
+Implementing LRU Cache.
+Implementing Graph algorithms.
