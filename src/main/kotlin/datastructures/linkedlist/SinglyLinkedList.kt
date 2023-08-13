@@ -1,4 +1,4 @@
-package datastructures
+package datastructures.linkedlist
 
 /*
 Deleting a node from a linked list is fairly straightforward. Given a node n,
@@ -11,19 +11,6 @@ class SinglyLinkedList<T> {
     class Node<T>(val value: T, var next: Node<T>? = null)
 
     private var head: Node<T>? = null
-
-    fun add(value: T) {
-        val newNode = Node(value)
-        if (head == null) {
-            head = newNode
-        } else {
-            var current = head
-            while (current?.next != null) {
-                current = current.next
-            }
-            current?.next = newNode
-        }
-    }
 
     fun delete(value: T) {
         //if it's node
@@ -46,7 +33,34 @@ class SinglyLinkedList<T> {
             prev?.next = current?.next
         }
 
+    }
 
+    fun add(value: T) {
+        val newNode = Node(value)
+        if (head == null) {
+            head = newNode
+        } else {
+            var current = head
+            while (current?.next != null) {
+                current = current.next
+            }
+            current?.next = newNode
+        }
+    }
+
+    fun findFirstDuplicateNode(): Node<T>? {
+        var current = head
+        while (current != null) {
+            var runner = current.next
+            while (runner != null) {
+                if (current.value == runner.value) {
+                    return current
+                }
+                runner = runner.next
+            }
+            current = current.next
+        }
+        return null
     }
 
     fun printList() {
@@ -60,14 +74,31 @@ class SinglyLinkedList<T> {
 }
 
 fun main() {
-    val singlyLinkedList = SinglyLinkedList<Int>()
+   /* val singlyLinkedList = SinglyLinkedList<Int>()
     singlyLinkedList.add(10)
     singlyLinkedList.add(20)
     singlyLinkedList.add(30)
 
-    singlyLinkedList.printList()
+    singlyLinkedList.printList()*/
 
-    singlyLinkedList.delete(20)
-    singlyLinkedList.printList()
+//    singlyLinkedList.delete(20)
+//    singlyLinkedList.printList()
+
+
+    val list = SinglyLinkedList<Int>()
+
+    // Add nodes with values
+    list.add(10)
+    list.add(20)
+    list.add(30)
+    list.add(40)
+    list.add(20) // Add a duplicate node
+
+    val duplicateNode = list.findFirstDuplicateNode()
+    if (duplicateNode != null) {
+        println("First duplicate node found with value: ${duplicateNode.value}")
+    } else {
+        println("No duplicate node found.")
+    }
 }
 

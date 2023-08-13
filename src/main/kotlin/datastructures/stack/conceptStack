@@ -1,0 +1,84 @@
+There are different types of stacks with variations in their behavior and use cases. Here are some common types of stacks:
+
+Basic Stack (LIFO Stack):
+    The basic stack, also known as the Last-In-First-Out (LIFO) stack, is the most common type of stack. Elements are pushed onto the top of the stack and popped from the top. This ensures that the last element pushed is the first one to be popped, creating a simple stack behavior.
+Min Stack:
+    A min stack is a variation of the basic stack that maintains an additional stack to keep track of the minimum element in the main stack. Each time an element is pushed onto the main stack, its value is compared with the current minimum, and if it's smaller, it's pushed onto the min stack. This allows constant-time retrieval of the minimum element from the stack.
+Max Stack:
+    Similar to the min stack, a max stack maintains an additional stack to keep track of the maximum element in the main stack. This is useful when you need to quickly retrieve the maximum element in the stack.
+Expression Evaluation Stack:
+    An expression evaluation stack is used to evaluate arithmetic expressions. It is often used in parsing and calculating the result of postfix (RPN) or prefix expressions. The stack holds operands and intermediate results as the expression is parsed and evaluated.
+Undo Stack:
+    An undo stack is used in applications that support undo functionality. Whenever a user performs an action, such as editing a document, the state before the action is pushed onto the stack. If the user wants to undo the action, the previous state is popped from the stack.
+Call Stack (Execution Stack):
+    In computer programming, a call stack is used to manage function calls and local variables during program execution. Each time a function is called, its context is pushed onto the call stack. When the function returns, its context is popped from the stack.
+Dynamic Stack:
+    A dynamic stack is a stack that can grow or shrink dynamically as elements are pushed or popped. This is useful when the size of the stack is not known in advance, and you want to avoid running out of space or wasting memory.
+These different types of stacks have specific use cases, and their behavior may be customized to suit particular requirements. Stacks are fundamental data structures used in various algorithms and applications, including expression evaluation, undo functionality, recursive function calls, and more.
+
+
+Some questions
+
+Evaluate Postfix Expression:
+    Given a mathematical expression in postfix notation (also known as Reverse Polish Notation), write a function to evaluate the expression and return the result. For example, given the expression "3 4 + 5 *", the function should return 35 (which is equivalent to (3 + 4) * 5).
+Valid Parentheses:
+    Write a function that takes a string containing only parentheses, brackets, and curly braces, and determines whether the parentheses are valid. The function should return true if the parentheses are balanced and properly nested, and false otherwise. For example, "({[()]})" is valid, but "([)]" is not.
+Largest Rectangle in Histogram:
+    Given an array representing the heights of a series of bars in a histogram, find the area of the largest rectangle that can be formed within the histogram. This problem involves stack-based traversal and is a classic example of how stacks can be used to solve a non-trivial problem.
+Next Greater Element II:
+    Given a circular array (an array that wraps around), for each element, find the next element that is greater than the current element. If it does not exist, consider it as -1. This problem requires circular traversal and can be solved using a stack.
+Implement a Stack with Minimum Operation:
+    Design a stack that supports the standard push and pop operations, along with an additional operation to retrieve the minimum element in constant time (O(1)). All operations should be efficient.
+Decode String:
+    Given an encoded string, decode it based on the following pattern: "number[string]" represents the string repeated number times. For example, "3[a]2[bc]" should be decoded as "aaabcbc".
+RPN Calculator with Variables:
+    Extend the Reverse Polish Notation (RPN) calculator to handle operations with variables. You'll be given a list of expressions, each containing variables and RPN operators. Evaluate the expressions, considering the variable values provided.
+
+
+
+import java.util.Stack
+
+fun evaluatePostfix(expression: String): Int {
+    val stack = Stack<Int>()
+
+    // Helper function to perform arithmetic operations
+    fun performOperation(operator: Char, operand1: Int, operand2: Int): Int {
+        return when (operator) {
+            '+' -> operand1 + operand2
+            '-' -> operand1 - operand2
+            '*' -> operand1 * operand2
+            '/' -> operand1 / operand2
+            else -> throw IllegalArgumentException("Invalid operator: $operator")
+        }
+    }
+
+    // Process each token in the expression
+    val tokens = expression.split(" ")
+    for (token in tokens) {
+        if (token.matches(Regex("\\d+"))) {
+            stack.push(token.toInt())
+        } else {
+            // Token is an operator
+            if (stack.size < 2) {
+                throw IllegalArgumentException("Invalid expression")
+            }
+            val operand2 = stack.pop()
+            val operand1 = stack.pop()
+            val result = performOperation(token[0], operand1, operand2)
+            stack.push(result)
+        }
+    }
+
+    // The final result should be the only item left in the stack
+    if (stack.size != 1) {
+        throw IllegalArgumentException("Invalid expression")
+    }
+
+    return stack.pop()
+}
+
+fun main() {
+    val expression = "3 4 + 5 *"
+    val result = evaluatePostfix(expression)
+    println(result)  // Output: 35
+}

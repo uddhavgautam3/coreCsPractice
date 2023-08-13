@@ -25,3 +25,59 @@ Other data structures like stacks, Hash Tables, Binary trees can also be constru
 Also in many operating systems, the thread scheduler(the thing that chooses what process needs to run at which time) maintains a doubly-linked list of all processes running at that time.
 Implementing LRU Cache.
 Implementing Graph algorithms.
+
+
+
+import android.os.Bundle
+import android.view.KeyEvent
+import android.webkit.WebView
+import android.webkit.WebViewClient
+import androidx.appcompat.app.AppCompatActivity
+import java.util.*
+
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var webView: WebView
+    private val history: LinkedList<String> = LinkedList()
+    private var currentIndex = -1
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        webView = findViewById(R.id.webView)
+        webView.webViewClient = WebViewClient()
+        webView.settings.javaScriptEnabled = true
+
+        // Load the initial website (e.g., "https://www.example.com")
+        loadUrl("https://www.example.com")
+    }
+
+    private fun loadUrl(url: String) {
+        webView.loadUrl(url)
+        if (currentIndex == -1 || history.isEmpty() || history.last != url) {
+            // Add the URL to the history only if it's not a duplicate or a page refresh
+            history.add(url)
+            currentIndex = history.size - 1
+        }
+    }
+
+    override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
+        if (keyCode == KeyEvent.KEYCODE_BACK && event?.action == KeyEvent.ACTION_DOWN) {
+            // Handle the back button press
+            if (currentIndex > 0) {
+                currentIndex--
+                loadUrl(history[currentIndex])
+                return true
+            }
+        } else if (keyCode == KeyEvent.KEYCODE_FORWARD && event?.action == KeyEvent.ACTION_DOWN) {
+            // Handle the forward button press
+            if (currentIndex < history.size - 1) {
+                currentIndex++
+                loadUrl(history[currentIndex])
+                return true
+            }
+        }
+        return super.onKeyDown(keyCode, event)
+    }
+}

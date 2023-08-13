@@ -1,3 +1,5 @@
+package datastructures.hashmap
+
 import java.util.*
 
 class SimpleHashMap<K, V> {

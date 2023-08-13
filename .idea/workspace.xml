@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d49a62cf-b4dd-427f-98d3-dc08b08a6783" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/datastructures/conceptDoublyLinkedList" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/hashmap/DLL1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/datastructures/DLL1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/hashmap/DoublyLinkedList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/datastructures/DoublyLinkedList.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/hashmap/LLdrawio.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/datastructures/LLdrawio.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/hashmap/SimpleHashMap.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/datastructures/SimpleHashMap.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/hashmap/SinglyLinkedList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/datastructures/SinglyLinkedList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/datastructures/stack/conceptStack" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/datastructures/stack/conceptStack" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,65 +48,65 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "/Users/roshanidahal/IdeaProjects/KotlinProj/src/main/kotlin/sorting",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/roshanidahal/IdeaProjects/KotlinProj/src/main/kotlin/sorting&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/kotlin/sorting" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/datastructures/linkedlist" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/hashmap" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/sorting/bucket" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/sorting/merge" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/sorting/selection" />
-      <recent name="$PROJECT_DIR$/src/main/kotlin/sorting/bubble" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.DoublyLinkedListKt">
+  <component name="RunManager" selected="Kotlin.QueueKt">
+    <configuration name="CircularLinkedListKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="datastructures.linkedlist.CircularLinkedListKt" />
+      <module name="KotlinProj.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DoublyLinkedListKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="datastructures.DoublyLinkedListKt" />
+      <option name="MAIN_CLASS_NAME" value="datastructures.linkedlist.DoublyLinkedListKt" />
       <module name="KotlinProj.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadixSorterKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sorting.radix.RadixSorterKt" />
-      <module name="KotlinProj.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SimpleHashMapKt (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SimpleHashMapKt" />
-      <module name="KotlinProj.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SimpleHashMapKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="datastructures.SimpleHashMapKt" />
+    <configuration name="QueueKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="datastructures.queue.QueueKt" />
       <module name="KotlinProj.main" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="SinglyLinkedListKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="datastructures.SinglyLinkedListKt" />
+      <option name="MAIN_CLASS_NAME" value="datastructures.linkedlist.SinglyLinkedListKt" />
+      <module name="KotlinProj.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StackKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="datastructures.stack.StackKt" />
       <module name="KotlinProj.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -118,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.DoublyLinkedListKt" />
+        <item itemvalue="Kotlin.QueueKt" />
+        <item itemvalue="Kotlin.StackKt" />
         <item itemvalue="Kotlin.SinglyLinkedListKt" />
-        <item itemvalue="Kotlin.SimpleHashMapKt (1)" />
-        <item itemvalue="Kotlin.SimpleHashMapKt" />
-        <item itemvalue="Kotlin.RadixSorterKt" />
+        <item itemvalue="Kotlin.CircularLinkedListKt" />
+        <item itemvalue="Kotlin.DoublyLinkedListKt" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +135,7 @@
       <workItem from="1691097370940" duration="7470000" />
       <workItem from="1691154626170" duration="10819000" />
       <workItem from="1691198984097" duration="3161000" />
-      <workItem from="1691524548793" duration="21116000" />
+      <workItem from="1691524548793" duration="33220000" />
     </task>
     <servers />
   </component>

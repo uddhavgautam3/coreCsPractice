@@ -1,4 +1,4 @@
-package datastructures
+package datastructures.linkedlist
 
 class Node<T>(val value: T, var prev: Node<T>? = null, var next: Node<T>? = null)
 
